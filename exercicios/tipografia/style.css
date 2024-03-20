@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Klee+One&family=Rampart+One&family=Work+Sans:wght@400;500&family=Workbench&display=swap');
+*{  
+    font-family: "Workbench", sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+/*Shorthand font
+font-style -> font-weight -> font-size-> font-family
+font: italic bolder 1em 'Arial', sans-serif;
+Para importar fontes baixadas
+FONT-FACE
+*/
+
+
+
+
+
+
+    /*Medidas absolutas
+    cm(centimetro)
+    mm(milimetro)
+    in(polegada)
+    px(pixel)
+    pt(ponto)
+    pc(paica)
+    16px tamanha normal da fonte normalmente
+    Medidas relativas
+    em(tamanho atual)
+    ex(tamanho da altura x)
+    rem(relativo a fonte do bady)
+    vw(porcentagem da view port)
+    vh(altura da view port)
+    Use sempre em!
+    font-weight = peso da fonte
+    pesos = lighter normal bold bolder
+    fornt-style = italic
+    text-decoration = underline(sublinhado)
+
+    */
+}
+#centro{
+    text-align: center;
+    
+}
+#justificado{
+    text-align: justify;
+   
+}
+#direita{
+    text-align: right;
+    
+}
+#Indentação{
+    text-indent: 20px;
+   
+}
+h3{
+    color: red;
+}
+h2{
+    color: blue;
+}
+h1{
+    color: darkgreen;
+}

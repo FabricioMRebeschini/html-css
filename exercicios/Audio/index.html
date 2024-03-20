@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Trabalhando com Audio no seu site cap11 aula 03</h1>
+    <p>No Youtube tem a aba biblioteca de áudio, onde você pode baixar áudios para seu site</p>
+    <p>Lembrando de tomar cuidado com o formato do áudio, ajustar para ficar menor.</p>
+    <p>Arquivo TOP é para download e nÃO PARA NAVEGAÇÃO!!!!!!</p>
+    <h2>Reproduzindo áudio</h2>
+    <!--Aqui usamos o parametro autoplay pra tocar direto e o -->
+    <audio src="./arabesque-mp3"  controls></audio>
+    <!--Outra forma mais indicada-->
+    <!--metadata é pra carregar as informações antes pelo menos-->
+    <!--Controls pra aparecer o controlador-->
+    <!-- Quiser usar o LOOP é pra quando chegar no fim do audio ele recomeça-->
+    <audio preload="metadata" controls loop>
+        <source src="arabesque-mp3"  type="audio/mpeg">
+        <p>Infelizmente seu navegador não tem compatibilidade com o arquivo de áudio. <a href="arabesque-mp3">Click aqui</a> para baixar o arquivo.</p>
+    </audio>
+    
+
+</body>
+</html>

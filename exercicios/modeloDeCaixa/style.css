@@ -1,0 +1,68 @@
+body{
+    background-color: #92c5d9;
+    margin: 0;
+    padding: 4px;
+    
+}
+h1{
+    text-align: center;
+}
+
+header{
+    background-color: lightgrey;
+    border-radius: 5px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.329);
+}
+
+nav{
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(44, 42, 42);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.329);
+}
+
+main{
+    box-shadow: 1px 4px 16px black;
+}
+
+article{
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+nav > a{
+    text-decoration: none;
+    padding-right: 40px;
+    color: #678c78cd;
+}
+
+a:hover{
+    color: #025951;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    color: wheat;
+    padding: 6px;
+}
+
+footer > p{
+    text-align: center;
+    margin: 0px;
+}
+article > h2{
+    margin-left: 5px;
+}
+aside > p{
+    margin-left: 5px;
+    background-color: rgb(44, 42, 42);
+    color: #678c78cd;
+}
+/*para fazer uma bola*/
+div#bola{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+}

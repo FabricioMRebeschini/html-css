@@ -1,0 +1,30 @@
+body{
+    background-color:rgb(225, 236, 233);
+}
+
+
+#azul{
+    color: blue;
+
+}
+#red{
+    color: red;
+}
+
+#green{
+    color: green;
+}
+
+#pink{
+    color: pink;
+}
+#degradê{
+background-image: linear-gradient(to left, #0EACE6,#0E68E6,#382DF5,#AA37F0);
+}
+
+div{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom, #AA37F0,#6E37F0);
+}

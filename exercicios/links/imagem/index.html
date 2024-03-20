@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Trabalhando com imagens cap11 aula02</h1>
+    <h2>Imagem dinâmica</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+    <!--Essa tag picture guarda imagens dentro-->
+    <picture>
+        <!--Aqui a mesma coisa se a resolução for até 750px ja abre uma imagem menor de 300px-->
+        <source media="(max-width:750px )" srcset="foto-p.png" type="image/png">
+        <!--Tag source funciona como ajuste da imagem, no caso aqui se a tela do usuário for tamanho max 1200 vai abrir a imagem( é uma responsividade)-->
+        <source media="(max-width:1250px )" srcset="foto-m.png" type="image/png">
+        <!--Aqui a tag da imagem G-->
+        <img src="./foto-g.png" alt="imagem flexível">
+    </picture>
+</body>
+</html>

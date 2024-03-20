@@ -1,0 +1,76 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(135, 213, 135);
+}
+#principal{
+    background-color: green;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.sub{
+    color: red;
+}
+.content{
+    color: brown;
+}
+.destaque{
+    background-color: rgba(216, 216, 75, 0.433);
+}
+
+div{
+    display: inline-block; /* em linha*/
+    background-color: brown;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+/* hover quer dizer que só vai alterar as configuraçãos quando voce passar o mause por cima do local*/
+
+/*DIV > P quer dizer o (P) que está dentro (div) vai se esconder*/
+div > p{
+    display: none;
+}
+/*DIV:hover quer dizer quando passa o mause o p que esta dentro da div vai aparecer e ficar vermelho*/
+div:hover > p{
+    display: block;
+    color: red;
+}
+/*Quando passar o mause na div faça isso*/
+div:hover{
+    background-color: blanchedalmond;
+    color: red;
+}
+a{
+    color: blueviolet;
+    /*text-decoration é o sublinhado q vc tirou do link no caso*/
+    text-decoration: none;
+}
+/*a:visited ou seja se for visitado vai fazer o que vc mandou abaixo*/
+a:visited{
+    color: darkred;
+}
+/*quando passar o mause em cima*/
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*quando voce clicar ele vai fica amarelo   */
+a:active{
+    color: yellow;
+}
+/*quer dizer que ao final de todos os itens vai escrever [link]*/
+a::after{
+    content: '[LINK]';
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgray;
+}
+/*quer dizer no inicio vai adicionar o conteudo -->*/
+a::before{ 
+    content: '-->';
+}
+

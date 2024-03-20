@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            /*Note que o conteudo vai se adaptar menos a imagem*/
+            min-width: 300px;
+            max-width: 800px;
+        }
+        /*Aqui no img você esta resolvendo a questao da adaptação da imagem sempre ficar 100% da resolução que impedirá da imagem estrapolar o espaço da tela*/
+        img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quod delectus veniam aliquid. Doloremque enim ipsum eveniet vitae iure, iste beatae magni fugiat minus consectetur harum fugit eius atque laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo asperiores ea natus dolores temporibus, qui dicta totam deserunt in quaerat explicabo hic. Provident quidem inventore quo aut, neque voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt explicabo accusamus id at, sed exercitationem velit illo quia libero. Eius maiores possimus optio nesciunt? Impedit quod ut molestias amet.</p>
+        <!--Perceba a resposividade quando chega no máximo de 600  a imagem muda para um tamanho menor que voce adicionou o caminho no src-->
+        <picture>
+            <source media="(max-width: 600px)" srcset="./imagens/irina-blok-pq.jpg">
+            <img src="./imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora reprehenderit delectus eos, officiis cum, laborum reiciendis voluptatum, iure nobis asperiores qui facere. Autem nam, doloribus repellendus at maiores quidem natus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, libero quas fuga facilis incidunt cupiditate eum illo illum aperiam reiciendis soluta totam doloremque asperiores exercitationem reprehenderit sit sint quia ratione.</p>
+    </main>
+    
+</body>
+</html>
