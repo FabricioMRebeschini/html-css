@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centralização vertical</title>
+    <style>
+        /*alinhamento horizontal
+
+        #container{
+            height: 400px;
+            background-color: aqua;
+        }
+        
+        #content{
+            width: 300px;
+            height: 200px;
+            background-color: yellow;
+            margin: auto;}
+        */
+
+        /*alinhamento vertical*/
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #container{
+            height: 96vh;
+            position: relative;
+            padding: 10px;
+            height: 600px;
+            background-color: aqua;
+        }
+        #content{
+            position: absolute;
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+            /*tranform vai modificar o eixo para deixar no centro*/
+            transform: translate(-50%,-50%);
+
+
+            }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="content">
+
+        </article>
+    </section>
+</body>
+</html>
