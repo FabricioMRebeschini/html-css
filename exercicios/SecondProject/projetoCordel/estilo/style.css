@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Klee+One&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@400;500&family=Workbench&display=swap');/*font-family: "Roboto", sans-serif;*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Great+Vibes&family=Klee+One&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:wght@400;500&family=Workbench&display=swap');/*font-family: "Courgette", cursive;   font-family: "Kalam", cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+:root{
+    --font1:Verdana,Geneva,Tahoma,sans-serif;
+    --font2:"Roboto", sans-serif;
+    --font3:"Courgette", cursive;
+    --font4: "Kalam", cursive;
+}
 
 *{
     margin: 0px;
@@ -8,6 +22,7 @@
 
 
 html,bady{
+    font-family: var(--font1);
     min-height: 100vh;
     background-color: darkgray;
 }
@@ -22,6 +37,8 @@ header > h1{
     padding-top: 50px;
     padding-bottom: 10px;
     font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 4vw;
 }
 header > p{
     padding-bottom: 50px;
@@ -38,10 +55,12 @@ a:hover{
 }
 
 section{
+    font-family:var(--font4);
     padding-top: 5vh;
     padding-bottom: 5vh;
     line-height: 2em;
-    padding-left: 30px;
+    padding-left: 40px;
+    font-size: 3.5vw;
 }
 section.normal{
     background-color: rgb(236, 236, 241);
@@ -53,7 +72,8 @@ color: aliceblue;
 }
 
 section.imagem > p{
-    width: 400px;
+    width: 466px;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.121);
 }
 footer{
