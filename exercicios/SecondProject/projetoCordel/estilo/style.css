@@ -75,13 +75,16 @@ section.normal > p{
 section.imagem{
 background-color: rgb(28, 27, 29);
 color: aliceblue;
-text-shadow:2px 1px 0px rgb(9, 8, 8);
+text-shadow:1px 1px 0px rgb(9, 8, 8);
+box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.547);
+background-attachment: fixed;
 }
 
 section.imagem > p{
     width: 38%;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.278);
+    background-color: rgba(0, 0, 0, 0.581);
+    
 }
 
 section > p{
@@ -89,10 +92,10 @@ section > p{
 }
 
 section#img-x{
-background-image: url();
+background-image: url('../../../../imagens/cordel06.jpg');
 background-repeat: no-repeat;
 background-position: center center;
-background-size: contain;
+background-size: cover;
 }
 
 section#img-y{
