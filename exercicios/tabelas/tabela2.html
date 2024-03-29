@@ -7,12 +7,27 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            height: 1280px;
         }
         table{
             width: 500px;
             height: auto;
             border-collapse: collapse;
             border: 2px solid black;
+            position: relative;
+            
+        }
+        /*efeito zebrado pode usar (2n -1) ou odd/even*/
+        tbody > tr:nth-child(even){
+            background-color: rgba(169, 169, 169, 0.605);
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight:bold;
+            padding:10px;
+            background-color: rgba(169, 169, 169, 0.605);
+            
             
         }
         tr{
@@ -24,6 +39,7 @@
         td.num{
             text-align: right;
         }
+    
 
         td,th{
             padding: 10px;
@@ -32,9 +48,18 @@
         }
 
         thead,tfoot{
-
-            background-color: darkgrey;
+            color: white;
+            background-color: rgb(27, 25, 25);
             font-weight: bolder;
+        }
+
+        /*Aqui voce está tornando o cabeçalho fixo pra quando dar scroll ele se movimentar*/
+        thead > tr > th{
+            position: sticky;
+            /* -1px pra cobrir o espaçamento*/
+            top: -1px;
+            background-color: rgb(27, 25, 25);
+
         }
     </style>
 </head>
@@ -50,13 +75,13 @@
                 TR, TD, TH
     -->
     <h1>Uso de tabelas grandes</h1>
-    
+   
     <table>
-
+        <caption> Popolação das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col" style="width: 180px;">Estados</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -101,7 +126,7 @@
 
         <tfoot>
             <tr>
-                <th>Total Habitantes</th>
+                <th scope="row">Total Habitantes</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
 
