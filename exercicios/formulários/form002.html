@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+
+        }
+    </style>
+</head>
+<body>
+    <!--Required pra tornar o campo obrigatório
+    auto complete pra nao fica aparecendo sugestao de digitação
+method post pra nao aparecer os dados na url
+minlength minimo de caracter
+max legth maximo de caractere
+size = tamanho da caixa que deseja
+placeholder = texto que voce quer que aparece na caixa-->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="usuario">Digite seu nome:</label>
+            <input type="text" name="usu" id="usuario" required minlength="5" maxlength="15" size="20" placeholder="Usuário" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="password">Digite a senha:</label>
+            <input type="password" name="senha" id="password" required minlength="8" maxlength="15" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p><input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+    
+</body>
+</html>
