@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Título</legend>
+            <p>
+                <label for="colorido">Selecione sua cor favorita:</label>
+                <input type="color" name="color" id="colorido" value="#00ff00">
+            </p>    
+
+            <p>
+                <label for="irange">Nivel</label>
+                <input type="range" name="range" id="irange" min="0" max="5" value="1">
+                <!--No range vc pode config min e max e value-->
+            </p>
+
+            <p>
+                <label for="ifile">foto</label>
+                <input type="file" name="file" id="ifile">
+            </p>
+
+            <!--OBS!!!
+            Quando voce usar  'file' você não pode usar o metodo 'get' tem usar o 'post'
+            passou de 3 mil bytes usa 'post' -->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
