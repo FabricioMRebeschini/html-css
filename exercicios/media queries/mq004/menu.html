@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsivo</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu </span>
+        <ul>
+            <menu id="listaMenu">
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </menu>
+        </ul>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aperiam. Nihil modi eveniet excepturi sint labore officiis eum? Doloribus, ab expedita. Inventore esse ratione magni aliquid repudiandae ut hic eaque?
+            Tempora quibusdam a vel inventore earum excepturi dicta? Ad iusto ratione, inventore consequatur velit numquam distinctio esse molestiae a nemo pariatur unde dolor optio eligendi amet perferendis facere corporis possimus.
+            Facilis itaque accusantium excepturi suscipit porro cumque adipisci quia voluptatem? Obcaecati quam vel dolor culpa debitis. Expedita, totam laborum dolores error consectetur recusandae nostrum. Voluptate, odio repudiandae? Earum, ipsum eius.
+            Neque nulla magni optio voluptatem facere, ex consequuntur, corporis itaque laudantium vero quibusdam quod quidem labore. Quo illo nihil ullam neque laborum! Consectetur commodi odit, culpa cum nihil facilis voluptatem?suscipit porro cumque adipisci quia voluptatem? Obcaecati quam vel dolor culpa debitis. Expedita, totam laborum dolores error consectetur recusandae nostrum. Voluptate, odio repudiandae? Earum, ipsum eius.
+            Neque nulla magni optio voluptatem facere, ex consequuntur, corporis itaque laudantium vero quibusdam quod quidem labore. Quo illo nihil ullam neque laborum! Consectetur commodi odit, culpa cum nihil facilis voluptatem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aperiam. Nihil modi eveniet excepturi sint labore officiis eum? Doloribus, ab expedita. Inventore esse ratione magni aliquid repudiandae ut hic eaque?
+                Tempora quibusdam a vel inventore earum excepturi dicta? Ad iusto ratione, inventore consequatur velit numquam distinctio esse molestiae a nemo pariatur unde dolor optio eligendi amet perferendis facere corporis possimus.
+                Facilis itaque accusantium excepturi suscipit porro cumque adipisci quia voluptatem? Obcaecati quam vel dolor culpa debitis. Expedita, totam laborum dolores error consectetur recusandae nostrum. Voluptate, odio repudiandae? Earum, ipsum eius.
+                Neque nulla magni optio voluptatem facere, ex consequuntur, corporis itaque laudantium vero quibusdam quod quidem labore. Quo illo nihil ullam neque laborum! Consectetur commodi odit, culpa cum nihil facilis voluptatem?suscipit porro cumque adipisci quia voluptatem? Obcaecati quam vel dolor culpa debitis. Expedita, totam laborum dolores error consectetur recusandae nostrum. Voluptate, odio repudiandae? Earum, ipsum eius.
+                Neque nulla magni optio voluptatem facere, ex consequuntur, corporis itaque laudantium vero quibusdam quod quidem labore. Quo illo nihil ullam neque laborum! Consectetur commodi odit, culpa cum nihil facilis voluptatem?</p>
+        </article>
+    </main>
+    <!--Ou seja se voce clicou e o menu estiver sendo exibido(block) ele some
+    senao
+    se voce clicou e ele nao ta axibido ele aparece-->
+    <script>
+        function clickMenu(){
+            if (listaMenu.style.display == 'block'){
+                listaMenu.style.display = 'none'
+            } else{
+                listaMenu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
